@@ -6,7 +6,7 @@ function App() {
 
   // return <Unitpage />;
 
-  // return <RateConvertor />;
+  return <RateConvertor />;
 }
 
 export default App;
