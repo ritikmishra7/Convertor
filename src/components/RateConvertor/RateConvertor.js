@@ -14,7 +14,7 @@ function RateConvertor() {
 
     async function fetchData() {
         // try {
-        if (leftcoin.length != 0 && leftcoin != 0) {
+        if (leftcoin.length !== 0 && leftcoin !== 0) {
 
             const apiURL = `https://api.coinconvert.net/convert/${from}/${to}?amount=${leftcoin}`;
             const response = await fetch(apiURL);
@@ -51,6 +51,7 @@ function RateConvertor() {
 
     useEffect(() => {
         fetchData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [from, to, leftcoin]);
 
 
